@@ -109,7 +109,7 @@ img {
 .logo-accent-header:focus {
   color: var(--accent-color);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-primary-header {
@@ -315,7 +315,7 @@ img {
   text-align: center;
   cursor: pointer;
   border-style: hidden;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.06em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -478,7 +478,6 @@ img {
 .form-input-text {
   display: flex;
   margin-top: 4px;
-  /*margin-bottom: 20px;*/
   padding: 12px 16px;
   width: 448px;
   height: 120px;
@@ -492,14 +491,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.checkbox:checked ~ .form-checkbox-icon {
-  opacity: 1;
-}
-
-.checkbox:checked + .form-checkbox-border {
-  opacity: 0;
 }
 
 .form-checkbox-item {
@@ -534,6 +525,26 @@ img {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #757575;
+  display: flex;
+  align-items: center;
+}
+
+.form-checkbox-text::before {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid black;
+  border-radius: 4px;
+  margin-right: 7px;
+}
+
+.checkbox:checked + .form-checkbox-text::before {
+  border: none;
+  background-color: var(--accent-color);
+  background-image: url(../images/vector.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .link-terms {
@@ -571,7 +582,6 @@ img {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
-
 
 /* -----------Главное меню портфолио --------*/
 
@@ -635,16 +645,14 @@ img {
   cursor: pointer;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-link:hover,
 .button-link:focus,
 .button-current {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-  0px 1px 2px rgba(0, 0, 0, 0.08),
-  0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -692,21 +700,23 @@ img {
 
 .menu-list:hover,
 .menu-list:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+}
 
 .work-overlay-text {
-font-size: 18px;
-line-height: 1.55;
-color: var(--background-header-color);
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--background-header-color);
 }
 
 .menu-list:hover,
 .menu-list:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -725,16 +735,16 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
   display: flex;
   align-items: center;
   background: rgba(33, 150, 243, 0.9);
-    transform: translateY(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transform: translateY(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .workcard-list:hover .work-overlay,
 .workcard-list:focus .work-overlay {
-    transform: translateY(-100%);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform: translateY(-100%);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-} 
+}
 
 /*--------------- Features -------------------*/
 
@@ -814,26 +824,25 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
 }
 
 .activity-item {
-position: relative;
+  position: relative;
 }
 
-
 .text-activity {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 370px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
 }
 
 /* ------------------Наша команда -------------*/
@@ -900,7 +909,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-man-link {
@@ -970,13 +979,13 @@ position: relative;
   border: 1px solid var(--clients-icon-color);
   border-radius: 4px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: var(--clients-icon-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
@@ -1124,8 +1133,7 @@ position: relative;
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
- /* ---Subscribe--- */
+/* ---Subscribe--- */
 
 .subscribe {
   width: 570px;
@@ -1138,7 +1146,7 @@ position: relative;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:var(--background-header-color);
+  color: var(--background-header-color);
 }
 
 .subscribe-form {
