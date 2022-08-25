@@ -32,6 +32,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
 }
 
@@ -103,13 +104,12 @@ img {
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 25px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-accent-header:hover,
 .logo-accent-header:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-primary-header {
@@ -119,13 +119,12 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-primary-header:hover,
 .logo-primary-header:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------Main-nav------------------ */
@@ -148,36 +147,32 @@ img {
   display: block;
   color: var(--primary-text-color);
   font-weight: 500;
-  line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link:hover,
 .link:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.site-nav .link-current:hover,
-.link-current:focus {
-  color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link-current {
   display: block;
   color: var(--accent-color);
   font-weight: 500;
-  line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link-current:hover,
+.link-current:focus {
+  color: var(--accent-color);
 }
 
 /*---------------- Auth-Nav--------------- */
@@ -194,7 +189,6 @@ img {
   gap: 10px;
   color: var(--title-title-color);
   font-weight: 500;
-  line-height: 1.14;
   text-decoration: none;
   letter-spacing: 0.02em;
   padding-top: 32px;
@@ -205,19 +199,16 @@ img {
 .auth-nav-link:hover,
 .auth-nav-link:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav-icon {
   fill: var(--title-title-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav-link:hover .auth-nav-icon,
 .auth-nav-link:focus .auth-nav-icon {
   fill: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link::after {
@@ -231,7 +222,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link {
@@ -250,7 +241,7 @@ img {
   background-color: var(--accent-color);
   border-radius: 2px;
   opacity: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-current {
@@ -266,8 +257,6 @@ img {
 .link-current:after {
   color: var(--accent-color);
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------------HERO----- -------------*/
@@ -317,16 +306,13 @@ img {
   border-style: hidden;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   letter-spacing: 0.06em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero .button:hover,
 .hero .button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----------Модульное окно-------- */
@@ -338,8 +324,7 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -394,6 +379,7 @@ img {
   color: #188ce8;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .no-scroll {
@@ -436,7 +422,7 @@ img {
   margin-bottom: 4px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14px;
+  line-height: 1.16;
   letter-spacing: 0.01em;
   color: #757575;
 }
@@ -550,7 +536,7 @@ img {
 .link-terms {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: underline;
@@ -565,7 +551,7 @@ img {
   padding: 10px 55px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.87;
   border-style: hidden;
   text-align: center;
   letter-spacing: 0.06em;
@@ -573,8 +559,7 @@ img {
   background-color: #2196f3;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button:hover,
@@ -598,8 +583,6 @@ img {
 .button-current:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-current {
@@ -616,6 +599,7 @@ img {
   line-height: 1.62;
   cursor: pointer;
   text-align: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-menu .button-current {
@@ -627,8 +611,6 @@ img {
 .button-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-link {
@@ -653,8 +635,6 @@ img {
 .button-current {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-item {
@@ -696,28 +676,26 @@ img {
   display: block;
   text-decoration: none;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list:hover,
 .menu-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-overlay-text {
   font-size: 18px;
   line-height: 1.55;
   color: var(--background-header-color);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list:hover,
 .menu-list:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .workcard-list {
@@ -742,8 +720,6 @@ img {
 .workcard-list:hover .work-overlay,
 .workcard-list:focus .work-overlay {
   transform: translateY(-100%);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*--------------- Features -------------------*/
@@ -920,24 +896,23 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-icon {
   fill: var(--text-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-man-link:hover,
 .work-man-link:focus {
   background-color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .work-man-link:hover .work-icon,
 .work-man-link:focus .work-icon {
   fill: var(--background-header-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------------------- Постоянные клиенты  -----------*/
@@ -964,6 +939,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-item:not(:last-child) {
@@ -978,29 +954,23 @@ img {
   align-items: center;
   border: 1px solid var(--clients-icon-color);
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-icon {
   fill: var(--clients-icon-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    drop-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover,
 .clients-link:focus {
   outline: none;
   border-color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon {
   fill: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -----------------------подвал------------------ */
@@ -1029,13 +999,12 @@ img {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-primary-footer:hover,
 .logo-primary-footer:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-map {
@@ -1051,15 +1020,11 @@ img {
 .link-connection-mail:hover,
 .link-connection-mail:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-connection-tel:hover,
 .link-connection-tel:focus {
   color: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-connection-mail {
@@ -1070,6 +1035,7 @@ img {
   line-height: 1.71;
   text-decoration: none;
   margin-bottom: 9px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-connection-tel {
@@ -1079,6 +1045,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ------------------Присоединяйтесь--------------------- */
@@ -1117,20 +1084,18 @@ img {
   align-items: center;
   border-radius: 50%;
   background: var(--join-item-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .join-link:hover,
 .join-link:focus {
-  background: var(--accent-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--accent-color);
 }
 
 .join-icon,
 .join-icon {
   fill: var(--background-header-color);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ---Subscribe--- */
@@ -1165,6 +1130,7 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-input:focus {
@@ -1191,6 +1157,7 @@ img {
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-button:hover,
